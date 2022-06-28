@@ -1,0 +1,8 @@
+<h1>Github Profiler</h1>
+<%= form_with model: @profile do |form| %>
+  <span>github.com/</span>
+  <%= form.text_field :handle %>
+  <p>
+    <%= form.submit "Go" %>
+  </p>
+<% end %>
