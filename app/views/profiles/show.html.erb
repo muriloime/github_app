@@ -1,2 +1,6 @@
-<h1>Profiles#show</h1>
-<p>Find me in app/views/profiles/show.html.erb</p>
+<h1>Github Profiler</h1>
+<%= render 'form' %>
+<%= image_tag @profile.json['avatar_url'], width: '200px' %>
+<div>
+  <%= "Stars: #{@profile.stars}"%>
+</div>

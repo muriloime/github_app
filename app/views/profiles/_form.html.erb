@@ -1,0 +1,7 @@
+<%= form_with model: Profile.new, data: {turbo: false} do |form| %>
+  <span>github.com/</span>
+  <%= form.text_field :handle %>
+  <p>
+    <%= form.submit "Go" %>
+  </p>
+<% end %>
